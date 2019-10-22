@@ -1,0 +1,155 @@
+body {
+	font-family: sans-serif;
+	color: #333;
+}
+.wrapper {
+	max-width: 930px;
+	margin: 0 auto;
+}
+
+.contact-form {
+	text-align: center;
+}
+.heading {
+	text-align: center;
+}
+.item {
+	margin-top: 15px;
+}
+.form-label{
+	font-size: 13px;
+    font-weight: bold;
+    display: inline-block;
+    width: 130px;
+    text-align: right;
+}
+
+.form {
+	margin-top: 20px;
+    display: block;
+    margin: 0 auto;
+    width: 470px;
+}
+::placeholder {
+	color: #999;
+}
+:-ms-input-placeholder {
+	color: #999;
+}
+::-ms-input-placeholder {
+	color: #999;
+}
+.input-cont {
+	width: 200px;
+	padding: 5px 10px 5px 10px;
+	border: 1px solid #ccc;
+}
+.req {
+	font-size: 11px !important;
+	background-color: #0075d9;
+	color: #fff;
+	padding: 0 8px 0 8px;
+}
+
+.age-list {
+	list-style: none;
+	display: inline-block;
+	padding: 0;
+}
+.age-list li {
+	display: inline-block;
+}
+
+.age-list li label input{
+	display: inline-block;
+	float: left;
+}
+
+.age-list label {
+	font-weight: normal;
+}
+.big {
+	width: 50%;
+	height: 100px;
+	padding: 5px 10px 5px 10px;
+	vertical-align: top;
+	color: #999;
+}
+.content {
+	border: 1px solid #ccc;
+	padding: 0 10px 30px 10px;
+}
+
+.agel {
+	font-size: 13px;
+}
+
+.link {
+	font-size: 13px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.link a {
+	color: #3958ff;
+}
+
+.agree {
+	display: block;
+	width: 56px;
+}
+
+.agree input{
+	display: inline-block;
+	float: left;
+}
+.btn {
+	padding: 10px;
+	width: 150px;
+	color: #fff;
+	background: #ff9258;
+	border: 0;
+	border-radius: 5px;
+	border-bottom: 2px solid #8d3304;
+	cursor: pointer;
+	margin-top: 15px;
+	font-size: 12px;
+}
+
+.btn-div {
+	margin: 0 auto;
+	text-align: center;
+	width: 151px;	
+}
+
+@media only screen and (max-width: 609px) {
+	.heading {
+		text-align: left;
+	}
+	.form-label {
+		width: 0;
+	}
+	.input-cont, textarea {
+		display: block;
+		width: 100% !important;
+		box-sizing: border-box;
+	}
+	.form {
+		width: auto;
+	}
+	.age-list, .age-list li{
+		display: block;
+	}
+	.btn, .btn-div {
+		width: 100%;
+		box-sizing: border-box;
+	}
+	.form-label {
+		position: relative;
+	}
+	.req {
+		position: absolute;
+		top: 0;
+		left: 46px;
+	}
+}

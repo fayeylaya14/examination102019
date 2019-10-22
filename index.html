@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+	<title>Front-End Programming | Exam</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+	<script type="text/javascript" src="js/controller.js"></script>
+</head>
+<body>
+	<div id="contact-form">
+		<div class="wrapper">
+			<div class="content">
+				<div class="heading">
+					<h3>CONTACT</h3>
+					<span>Please fill in the form below</span>
+				</div>
+				<form name="myForm" onsubmit="return validateForm()" class="form">
+					<div class="item">
+						<label class="form-label">Name <span class="req">required</span></label>
+						<input class="input-cont" type='text' name="fname" placeholder="Make Jacobs" required/>
+					</div>
+					<div class="item">
+						<label class="form-label">E-mail <span class="req">required</span></label>
+						<input name="email" class="input-cont" type='text' placeholder="make@exam.ph" required/>
+					</div>
+					<div class="item">
+						<label class="form-label">Age</label>
+						<ul class="age-list">
+							<li>
+								<label class="agel"> 20s
+									<input type="radio" name="age" checked/>
+								</label>
+							</li>
+							<li>
+								<label class="agel"> 30s
+									<input type="radio" name="age"/>
+								</label>
+							</li>
+							<li>
+								<label class="agel"> 40s
+									<input type="radio" name="age"/>
+								</label>
+							</li>
+							<li>
+								<label class="agel"> 50s
+									<input type="radio" name="age"/>
+								</label>
+							</li>
+						</ul>
+					</div>
+					<div class="item">
+						<label class="form-label">Interests</label>
+						<ul class="age-list">
+							<li>
+								<label class="agel"> coding
+									<input type="checkbox" name="age" checked/>
+								</label>
+							</li>
+							<li>
+								<label class="agel"> design
+									<input type="checkbox" name="age"/>
+								</label>
+							</li>
+							<li>
+								<label class="agel"> SEO
+									<input type="checkbox" name="age"/>
+								</label>
+							</li>
+							<li>
+								<label class="agel"> marketing
+									<input type="checkbox" name="age"/>
+								</label>
+							</li>
+						</ul>
+					</div>
+					<div class="item">
+						<label class="form-label">Other message</label>
+						<textarea type="text" class="big" name="age" placeholder="">ex) About SEO</textarea>
+					</div>
+					<div class="link">
+						<span class="message">Please send a message upon consent to <a href="#">the privacy policy.</a></span>
+						<label class="agree"> <span>agree</span>
+							<input class="check" type="checkbox" name="" checked/>
+						</label>
+					</div>
+					<div class="btn-div">
+						<button class="btn" type="submit">SEND</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
